@@ -104,7 +104,7 @@ class Util
     public static function normalizeRelativePath($path)
     {
         $path = str_replace('\\', '/', $path);
-        $path =  static::removeFunkyWhiteSpace($path);
+        //$path =  static::removeFunkyWhiteSpace($path);
         $parts = [];
 
         foreach (explode('/', $path) as $part) {
